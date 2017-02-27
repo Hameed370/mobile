@@ -88,10 +88,40 @@
   </a>
 </div>
 
+<div>
+
+</div>
 
 
-
-
-
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-sm-2">
+<h6>Copyright &copy; 2017</h6>
+</div>
+<div class="col-sm-4">
+<h6>About Us</h6>
+<p>All type of mobile accessories available.</p>
+</div>
+<div class="col-sm-2">
+<h6>Navigation</h6>
+<ul class="unstyled">
+<li><a href="#">Home</a> </li>
+<li><a href="#" >Cases</a></li>
+<li><a href="#">Headphones</a></li>
+</ul>
+</div>
+<div class="col-sm-2">
+<h6>Follow Us</h6>
+<ul class="unstyled">
+<li><a href="#">Facebook</a> </li>
+<li><a href="#" >Twitter</a></li>
+<li><a href="#">Instragram</a></li>
+<li><a href="#">Google Plus</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
 </body>
 </html>
