@@ -1,14 +1,19 @@
+<%@ taglib prefix="s" uri="http://www.springframework.org/tags"%> 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	pageEncoding="ISO-8859-1" isELIgnored="false" %>
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-<link href="Assets/css/bootstrap.css" rel="stylesheet" type="text/css">
- <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
-<script type="text/javascript" src="Assets/js/bootstrap.min.js"  ></script>
-<script type="text/javascript" src="includes/js/modernizr-2.6.2.min.js"></script>
+<title>All Product Page</title>
+<s:url value="/resources/css/" var="css"/>
+<s:url value="/resources/js/" var="js"/>
+<s:url value="/resources/Images" var="imgs" />
+<link href="${css}bootstrap.css" rel="stylesheet" >
+<link href="${css}bootstrap-glyphicons.css" rel="stylesheet">
+<script type="text/javascript" src="${js}bootstrap.min.js"></script>
+<script type="text/javascript" src="${js}jquery-3.1.1.js"></script>
+<script type="text/javascript" src="${js}modernizr-2.6.2.min.js"></script>
 
 </head>
 <body>
@@ -22,7 +27,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><IMG src="Assets/images/benefits-mobile-access.jpg" alt="Your Logo" height="25px" width="25px"></a>
+      <a class="navbar-brand" href="#"><IMG src="${imgs }/benefits-mobile-access.jpg" alt="Your Logo" height="25px" width="25px"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -52,35 +57,35 @@
 
   <!-- Table -->
   <table class="table table-bordered">
-   <thead>
-   <tr>
-   <TH>Sl No</TH>
-   <th>Product Name</th>
-   <th>Price</th>
-   <th>Image</th>
+   <thead  >
+   <tr >
+   <TH class="col-sm-1">Sl No</TH>
+   <th class="col-sm-4">Product Name</th>
+   <th class="col-sm-1">Price</th>
+   <th class="col-sm-1">Image</th>
    <th>Action</th>
    </tr>
    </thead>
-   <tbody>
+   <tbody >
    <tr>
    <td>1</td>
    <td>Defender Case</td>
    <td>500</td>
-   <td><img src="Assets/Images/defender_case.jpg" height="150px" width="150px" alt="defender_case"></td>
+   <td><img src="${imgs}/defender_case.jpg" height="50px" width="50px" alt="defender_case"></td>
    <td></td>
    </tr>
    <tr>
    <td>2</td>
    <td>TPU Case</td>
    <td>350</td>
-   <td></td>
+   <td><img src="${imgs}/tpu_case.jpg" height="50px" width="50px" alt="tpu_case"></td>
    <td></td>
    </tr>
    <tr>
    <td>3</td>
    <td>Samsung Headphone </td>
    <td>250</td>
-   <td></td>
+   <td><img src="${imgs}/samsung_headphone.jpg" height="50px" width="50px" alt="samsung_headphone"></td>
    <td></td>
    </tr>
    </tbody>

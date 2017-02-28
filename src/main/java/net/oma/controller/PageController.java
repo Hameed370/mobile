@@ -15,7 +15,7 @@ public class PageController {
 		return mv;
 	}
 	
-	@RequestMapping(value={"/List","/Products","products"})
+	@RequestMapping(value={"/List","/Products","/products"})
 	public ModelAndView list()
 	{
 		ModelAndView mv =new ModelAndView("ProductDetails");

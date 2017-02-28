@@ -1,14 +1,16 @@
-<%@ taglib prefix="s" uri="http://www.springframework.org/tags" %> 
+<%@ taglib prefix="s" uri="http://www.springframework.org/tags"%> 
+<%@page isELIgnored="false" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<s:url value="/resources/css" var="css"/>
-<s:url value="/resources/js" var="js"/>
-<link href="${css}/bootstrap.css" rel="stylesheet" type="text/css">
- <link href="${css}/bootstrap-glyphicons.css" rel="stylesheet">
-<script type="text/javascript" src="${js}/bootstrap.min.js"  ></script>
-<script type="text/javascript" src="${js}/modernizr-2.6.2.min.js"></script>
+<s:url value="/resources/css/" var="css"/>
+<s:url value="/resources/js/" var="js"/>
+<s:url value="/resources/Images" var="imgs" />
+<link href="${css}bootstrap.css" rel="stylesheet" >
+<link href="${css}bootstrap-glyphicons.css" rel="stylesheet">
+<script type="text/javascript" src="${js}bootstrap.min.js"  />
+<script type="text/javascript" src="${js}modernizr-2.6.2.min.js" />
 <title>My Landing Page</title>
 <script >
 footer
@@ -28,7 +30,7 @@ footer
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><IMG src="Assets/images/benefits-mobile-access.jpg" alt="Your Logo" height="25px" width="25px"></a>
+      <a class="navbar-brand" href="#"><IMG src="${imgs}/benefits-mobile-access.jpg" alt="Your Logo" height="25px" width="25px"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -65,19 +67,19 @@ footer
   <!-- Wrapper for slides -->
   <div class="carousel-inner" >
     <div class="item active" id="slide1">
-      <img src="Assets/Images/mobileaccess_banner1.jpg" alt="Banner 1">
+      <img src="${imgs}/mobileaccess_banner1.jpg" alt="Banner 1">
       <div class="carousel-caption">
         Mobile Accessories Banner 1
       </div>
     </div>
     <div class="item" id="slide2">
-      <img src="Assets/Images/mobileaccess_banner2.jpg" alt="Banner 2">
+      <img src="${imgs}/mobileaccess_banner2.jpg" alt="Banner 2">
       <div class="carousel-caption">
         Mobile Accessories Banner 2
       </div>
     </div>
     <div class="item" id="slide3">
-      <img src="Assets/Images/mobileaccess_banner3.jpg" alt="Banner 3">
+      <img src="${imgs}/mobileaccess_banner3.jpg" alt="Banner 3">
       <div class="carousel-caption">
         Mobile Accessories Banner 3
       </div>
