@@ -1,13 +1,21 @@
-
+<%@ taglib prefix="s" uri="http://www.springframework.org/tags" %> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link href="Assets/css/bootstrap.css" rel="stylesheet" type="text/css">
- <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
-<script type="text/javascript" src="Assets/js/bootstrap.min.js"  ></script>
-<script type="text/javascript" src="includes/js/modernizr-2.6.2.min.js"></script>
+<s:url value="/resources/css" var="css"/>
+<s:url value="/resources/js" var="js"/>
+<link href="${css}/bootstrap.css" rel="stylesheet" type="text/css">
+ <link href="${css}/bootstrap-glyphicons.css" rel="stylesheet">
+<script type="text/javascript" src="${js}/bootstrap.min.js"  ></script>
+<script type="text/javascript" src="${js}/modernizr-2.6.2.min.js"></script>
 <title>My Landing Page</title>
+<script >
+footer
+{
+	
+	}
+</script>
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -37,8 +45,8 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
+        <li><a href="/oma/Login">Login</a></li>
+        
         </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -46,29 +54,29 @@
 
 <!-- Carousel code -->
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div id="carouselmain" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carouselmain" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselmain" data-slide-to="1"></li>
+    <li data-target="#carouselmain" data-slide-to="2"></li>
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
+  <div class="carousel-inner" >
+    <div class="item active" id="slide1">
       <img src="Assets/Images/mobileaccess_banner1.jpg" alt="Banner 1">
       <div class="carousel-caption">
         Mobile Accessories Banner 1
       </div>
     </div>
-    <div class="item">
+    <div class="item" id="slide2">
       <img src="Assets/Images/mobileaccess_banner2.jpg" alt="Banner 2">
       <div class="carousel-caption">
         Mobile Accessories Banner 2
       </div>
     </div>
-    <div class="item">
+    <div class="item" id="slide3">
       <img src="Assets/Images/mobileaccess_banner3.jpg" alt="Banner 3">
       <div class="carousel-caption">
         Mobile Accessories Banner 3
@@ -89,10 +97,10 @@
 </div>
 
 <div>
-
+<H2><a href="/oma/Products" >List All Products...</a></H2>
 </div>
 
-
+<div class="navbar navbar-default navbar-fixed-bottom">
 <footer>
 <div class="container">
 <div class="row">
@@ -106,7 +114,7 @@
 <div class="col-sm-2">
 <h6>Navigation</h6>
 <ul class="unstyled">
-<li><a href="#">Home</a> </li>
+<li><a href="/oma/Home">Home</a> </li>
 <li><a href="#" >Cases</a></li>
 <li><a href="#">Headphones</a></li>
 </ul>
@@ -114,8 +122,8 @@
 <div class="col-sm-2">
 <h6>Follow Us</h6>
 <ul class="unstyled">
-<li><a href="#">Facebook</a> </li>
-<li><a href="#" >Twitter</a></li>
+<li><a href="www.facebook.com/hameed370">Facebook</a> </li>
+<li><a href="www.twitter.com/hameed370" >Twitter</a></li>
 <li><a href="#">Instragram</a></li>
 <li><a href="#">Google Plus</a></li>
 </ul>
@@ -123,5 +131,6 @@
 </div>
 </div>
 </footer>
+</div>
 </body>
 </html>
