@@ -108,18 +108,22 @@
  
  	<table id="mytable" class="table table-bordered">
  	<thead>
- 	<th>image name</th>
+ <!-- 	<th>image name</th> -->
  <!-- 	<th>active</th> -->
  	<th>id</th>
  	<th>description</th>
  	<th>PNAME</th>
+ 	<th>Image</th>
+ 	<th>Link</th>
  	</thead>
 <tfoot>
- 	<tr>image name</tr>
+ <!-- 	<tr>image name</tr> -->
  <!-- 	<tr>active</tr> -->
  	<tr>id</tr>
  	<tr>description</tr>
  	<tr>PNAME</tr>
+ 	<tr>Image</tr>
+ 	<tr>link</tr>
  	</tfoot>
   	</table>
  
