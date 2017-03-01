@@ -1,4 +1,5 @@
 <%@ taglib prefix="s" uri="http://www.springframework.org/tags"%> 
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page isELIgnored="false" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -99,7 +100,25 @@ footer
 </div>
 
 <div>
-<H2><a href="/oma/Products" >List All Products...</a></H2>
+<p>PRODUCTS</p>
+<!-- <table class="table-bordered">
+<thead>
+<tr>
+<th>ID</th>
+<th>NAME</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+ -->
+<c:forEach items="${product}" var="products"> 
+
+${products.pname }
+
+</c:forEach>
+<!-- </tbody>
+</table>
+ -->
 </div>
 
 <div class="navbar navbar-default navbar-fixed-bottom">
