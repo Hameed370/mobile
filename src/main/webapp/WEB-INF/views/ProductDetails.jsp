@@ -116,15 +116,15 @@
  	<th>Image</th>
  	<th>Link</th>
  	</thead>
-<tfoot>
- <!-- 	<tr>image name</tr> -->
- <!-- 	<tr>active</tr> -->
+<!-- <tfoot>
+ 	<tr>image name</tr>
+ 	<tr>active</tr>
  	<tr>id</tr>
  	<tr>description</tr>
  	<tr>PNAME</tr>
  	<tr>Image</tr>
  	<tr>link</tr>
- 	</tfoot>
+ 	</tfoot> -->
   	</table>
  
  

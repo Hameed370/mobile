@@ -22,7 +22,7 @@ public class PageController {
 		return mv;
 	}
 	
-	@RequestMapping(value={"/List","/Products","/products"})
+	@RequestMapping(value={"/Products","/products"})
 	public ModelAndView list()
 	{
 		ModelAndView mv =new ModelAndView("ProductDetails");
@@ -38,11 +38,4 @@ public class PageController {
 		return mv;
 	}
 	
-	
-	
-	
-	
-	
-	
-
 }

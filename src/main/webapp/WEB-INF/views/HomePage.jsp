@@ -1,7 +1,7 @@
 <%@ taglib prefix="s" uri="http://www.springframework.org/tags"%> 
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page isELIgnored="false" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -10,8 +10,8 @@
 <s:url value="/resources/Images" var="imgs" />
 <link href="${css}bootstrap.css" rel="stylesheet" >
 <link href="${css}bootstrap-glyphicons.css" rel="stylesheet">
-<script type="text/javascript" src="${js}bootstrap.min.js"  />
-<script type="text/javascript" src="${js}modernizr-2.6.2.min.js" />
+<script type="text/javascript" src="${js}bootstrap.min.js"></script>
+<script type="text/javascript" src="${js}modernizr-2.6.2.min.js"></script>
 <title>My Landing Page</title>
 <script >
 footer

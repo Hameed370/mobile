@@ -1,0 +1,7 @@
+insert into product values (2,'Defender Case for mobiles','Defender CASE','true');
+
+
+
+insert into product (description,pname,qty,active ) values ('Defender Case for mobiles','Defender CASE',20,'true');
+
+

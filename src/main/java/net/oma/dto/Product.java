@@ -1,17 +1,30 @@
 package net.oma.dto;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Product {
 
 	
 	/*private variables*/
 	
-	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int Id;
 	private String Pname;
 	private String Description;
-	private String imageUrl;
 	private boolean active = true;
+	private int Qty;
 	
+	public int getQty() {
+		return Qty;
+	}
+	public void setQty(int qty) {
+		Qty = qty;
+	}
 	/*getter and setters
 */	
 	public int getId() {
@@ -32,20 +45,11 @@ public class Product {
 	public void setDescription(String description) {
 		Description = description;
 	}
-	public String getImageUrl() {
-		return imageUrl;
-	}
-	public void setImageUrl(String imageUrl) {
-		this.imageUrl = imageUrl;
-	}
 	public boolean isActive() {
 		return active;
 	}
 	public void setActive(boolean active) {
 		this.active = active;
 	}
-	
-	
-	
 	
 }

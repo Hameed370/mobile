@@ -17,7 +17,7 @@ $(function(){
 	        },
 	        {data: null,
 	        	mRender: function ( data, type, row ) {
-	                return '<a class="btn btn-primary" href="'+data+'">View Item</a> &nbsp;<a class="btn btn-primary" href="'+data+'">Add To Cart</a> ';
+	                return '<a class="btn btn-primary" href="/oma/show/'+row.id+'/product">View Item</a> &nbsp;<a class="btn btn-primary" href="'+data+'">Add To Cart</a> ';
 	            }	
 	        }
 	        
