@@ -8,10 +8,16 @@
 <s:url value="/resources/css/" var="css"/>
 <s:url value="/resources/js/" var="js"/>
 <s:url value="/resources/Images" var="imgs" />
-<link href="${css}bootstrap.css" rel="stylesheet" >
+<link href="${css}bootstrap.css" rel="stylesheet">
+<link href="${css }dataTables.bootstrap.css" rel="stylesheet">
 <link href="${css}bootstrap-glyphicons.css" rel="stylesheet">
+<script type="text/javascript" src="${js}jquery-3.1.1.js"></script>
 <script type="text/javascript" src="${js}bootstrap.min.js"></script>
+<script type="text/javascript" src="${js}jquery.dataTables.js"></script>
+<script type="text/javascript" src="${js }dataTVables.bootstrap.js"></script>
 <script type="text/javascript" src="${js}modernizr-2.6.2.min.js"></script>
+<script type="text/javascript" src="${js}mytable.js"></script>
+
 <title>My Landing Page</title>
 <script >
 footer
@@ -37,8 +43,8 @@ footer
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Cases</a></li>
+        <li class="active"><a href="/oma/">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="/oma/products">Products</a></li>
         <li><a href="#">Headphones</a></li>
       </ul>
       <form class="navbar-form navbar-left">
@@ -99,7 +105,17 @@ footer
   </a>
 </div>
 
-<div>
+<table id="mytableproduct" class="table table-hover" >
+<thead>
+<th>Product</th>
+<th>Action</th>
+</thead>
+</table>
+<button class="btn btn-info"> <a href="/oma/Products">View All Products</a></button>
+
+
+
+<%-- <div>
 <p>PRODUCTS</p>
 <!-- <table class="table-bordered">
 <thead>
@@ -111,6 +127,7 @@ footer
 </thead>
 <tbody>
  -->
+ 
 <c:forEach items="${product}" var="products"> 
 
 ${products.pname }
@@ -120,8 +137,8 @@ ${products.pname }
 </table>
  -->
 </div>
-
-<div class="navbar navbar-default navbar-fixed-bottom">
+ --%> 
+<div class="navbar navbar-fixed-bottom">
 <footer>
 <div class="container">
 <div class="row">
@@ -143,7 +160,7 @@ ${products.pname }
 <div class="col-sm-2">
 <h6>Follow Us</h6>
 <ul class="unstyled">
-<li><a href="www.facebook.com/hameed370">Facebook</a> </li>
+<li><a href="http://www.facebook.com/hameed370">Facebook</a> </li>
 <li><a href="www.twitter.com/hameed370" >Twitter</a></li>
 <li><a href="#">Instragram</a></li>
 <li><a href="#">Google Plus</a></li>

@@ -42,12 +42,24 @@ public class ProductDAOImpl implements ProductDAO {
 	public List<Product> list() {
 		
 	products = (List<Product>)sessionFactory.openSession().createQuery("FROM Product").list();
-	for(Product pro : products)
+	/*for(Product pro : products)
 	{
 		System.out.println(pro.getPname());
-	}
+	}*/
 	return products;
 	}
+
+	public Product getProduct(int id) {
+		
+		products = (List<Product>)sessionFactory.openSession().createQuery("FROM Product").list();
+		for(Product pro : products)
+		{
+			if(pro.getId() == id)
+			return pro;
+		}
+		return null;
+		}
+	
 
 /*	public Product getProduct(int id)
 	{

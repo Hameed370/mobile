@@ -10,10 +10,12 @@
 <s:url value="/resources/js/" var="js" />
 <s:url value="/resources/Images" var="imgs" />
 <link href="${css}bootstrap.css" rel="stylesheet">
+<link href="${css }dataTables.bootstrap.css" rel="stylesheet">
 <link href="${css}bootstrap-glyphicons.css" rel="stylesheet">
 <script type="text/javascript" src="${js}jquery-3.1.1.js"></script>
 <script type="text/javascript" src="${js}bootstrap.min.js"></script>
 <script type="text/javascript" src="${js}jquery.dataTables.js"></script>
+<script type="text/javascript" src="${js }dataTVables.bootstrap.js"></script>
 <script type="text/javascript" src="${js}modernizr-2.6.2.min.js"></script>
 <script type="text/javascript" src="${js}mytable.js"></script>
 
@@ -41,7 +43,7 @@
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="/oma/Home">Home <span
 							class="sr-only">(current)</span></a></li>
-					<li><a href="#">Cases</a></li>
+					<li><a href="/oma/products">Products</a></li>
 					<li><a href="#">Headphones</a></li>
 				</ul>
 				<form class="navbar-form navbar-left">
@@ -106,7 +108,7 @@
  --%>
  
  
- 	<table id="mytable" class="table table-bordered">
+ 	<table id="mytable" class="table table-striped">
  	<thead>
  <!-- 	<th>image name</th> -->
  <!-- 	<th>active</th> -->
@@ -126,7 +128,6 @@
  	<tr>link</tr>
  	</tfoot> -->
   	</table>
- 
  
  
  </body>
